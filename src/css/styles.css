@@ -1,3 +1,8 @@
+:root {
+  --button-color: #f4f4fd;
+  --button-accent-bgr-color: #fcfcfc;
+  --button-disabled: #fefefe;
+}
 /* common */
 * {
   box-sizing: border-box;
