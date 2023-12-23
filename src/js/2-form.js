@@ -4,7 +4,8 @@ const form = document.querySelector('.feedback-form');
 const LOCAL_FEEDBACK_KEY = 'feedback-form-state';
 
 try {
-  const initialFormData = JSON.parse(localStorage.getItem(LOCAL_FEEDBACK_KEY));
+  const initialFormData =
+    JSON.parse(localStorage.getItem(LOCAL_FEEDBACK_KEY)) || {};
 
   Array.from(form.elements).forEach(element => {
     const storageValue = initialFormData[element.name];
