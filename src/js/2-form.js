@@ -24,7 +24,7 @@ form.addEventListener(
     const formObject = {};
 
     formData.forEach((value, key) => {
-      formObject[key] = value;
+      formObject[key] = value.trim();
     });
 
     localStorage.setItem(LOCAL_FEEDBACK_KEY, JSON.stringify(formObject));
@@ -36,7 +36,7 @@ form.addEventListener('submit', event => {
 
   console.log({
     email: form.elements.email.value,
-    message: form.elements.value,
+    message: form.elements.message.value,
   });
 
   localStorage.removeItem(LOCAL_FEEDBACK_KEY);

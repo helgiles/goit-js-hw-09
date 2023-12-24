@@ -77,7 +77,6 @@ const listItems = images
   					<img
     					class='gallery-image'
     					src='${preview}'
-    					data-source='${original}'
     					alt='${description}'
   					/>
 					</a>
